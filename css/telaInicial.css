@@ -12,6 +12,10 @@ body {
     background-repeat: no-repeat;
 }
 
+nav {
+    background-color: #f91d84!important;
+}
+
 .divFormTitle {
     width: 85%;
     border-radius: 10px;

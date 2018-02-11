@@ -1,0 +1,69 @@
+
+ /* Largura da barra de rolagem */
+ ::-webkit-scrollbar {
+    width: 10px;
+    display: none; 
+
+}
+
+/* Fundo da barra de rolagem */
+::-webkit-scrollbar-track-piece {
+    background-color: #05395b;
+    border-left: 1px solid #CCC;
+}
+
+/* Cor do indicador de rolagem */
+::-webkit-scrollbar-thumb:vertical,
+::-webkit-scrollbar-thumb:horizontal {
+    background-color: #3490cc;
+}
+
+/* Cor do indicador de rolagem - ao passar o mouse */
+::-webkit-scrollbar-thumb:vertical:hover,
+::-webkit-scrollbar-thumb:horizontal:hover {
+    background-color: #717171;
+}
+
+body {
+    background-image: url(../img/backgroundIndex.png);
+    background-repeat: no-repeat;
+}
+
+nav {
+    background-color: #f91d84!important;
+}
+
+.divWhite{
+    background-color: white;
+    border-radius: 8px;
+    width: 85%;
+    height: auto;
+    margin-left: 7%;
+    margin-top: 2%;
+    overflow: auto;
+    padding: 2%;
+}
+
+.hid{
+    display: none;
+}
+
+.data {
+    text-align: right!important;
+    margin-left: 80%;
+}
+
+.divTitulo {
+    font-family: "Montserrat";
+    color: #f91d84;
+    text-align: center;
+    font-size: 15pt;
+    text-decoration: underline;
+}
+
+.divTexto {
+    font-family: "Montserrat";
+    color: pink;
+    font-size: 13pt;
+    padding-top: 1%;
+}
