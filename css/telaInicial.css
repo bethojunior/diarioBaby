@@ -1,0 +1,54 @@
+::placeholder {
+    text-align: center;
+    font-size: 20pt;
+}
+
+input:active {
+    border: none!important;
+}
+
+body {
+    background-image: url(../img/backgroundIndex.png);
+    background-repeat: no-repeat;
+}
+
+.divFormTitle {
+    width: 85%;
+    border-radius: 10px;
+    background-color: white;
+    margin-left: 6%;
+    margin-top: 2%;
+}
+
+#titulo {
+    width: 80%;
+    margin-left: 7%;
+    border: none;
+    font-family: "Montserrat";
+    color: pink;
+    text-align: center;
+    font-size: 18pt;
+}
+
+.divFormBody{
+    width: 95%;
+    border-radius: 10px;
+    background-color: white;
+    margin-left: 2%;
+    margin-top: 2%;
+}
+
+.divFormBody textarea {
+    resize: none;
+    height: 400px;
+    font-size:21px;
+    border: none;
+    font-family: "Pacifico";
+    color: pink;
+}
+
+#btnEnviar {
+    border-radius: 5px;
+    margin-left: 37%;
+    margin-top: 3%;
+}
