@@ -58,3 +58,82 @@ if(document.getElementById("btnEnviar") != null){
 
     }
 }
+
+
+function update(){
+    let id = JSON.parse(localStorage.getItem("idUpdate"));
+    var titulo = document.getElementById("titleAgain").value;
+    var texto = document.getElementById("textAgain").value;
+    var login = dados.login;
+    $.ajax({
+        url: "http://betho3.000webhostapp.com/mvc/dao/updateDados.php",
+        type: "POST",
+        data: {"id" : id , "titulo" : titulo , "texto" : texto , "login" : login} ,
+        success: function(result){
+            if(result != false){
+                console.log("ok");
+                function ok() {
+                    location.reload();
+                };
+                
+                navigator.notification.alert(
+                    'Adcionado ao seu diário com sucesso', 
+                    ok,        
+                    ';D',            
+                    'OK'                 
+                );
+            }
+        }, error: function(result){
+            console.log("erro");
+            navigator.vibrate([300 , 300 , 200 , 100]);
+            function fail() {
+                location.reload();
+            }
+            
+            navigator.notification.alert(
+                'Erro ao adcionar em seu diário', 
+                fail,        
+                'Erro',            
+                'OK'                 
+            );
+        }
+    });
+    
+}
+
+function dele(){
+    let id = JSON.parse(localStorage.getItem("idUpdate"));
+    $.ajax({
+        url: "http://betho3.000webhostapp.com/mvc/dao/deleteDados.php",
+        type: "POST",
+        data: {"id" : id } ,
+        success: function(result){
+            if(result != false){
+                console.log("ok");
+                function okDel() {
+                    location.reload();
+                }
+                
+                navigator.notification.alert(
+                    'Apagado com sucesso', 
+                    okDel,        
+                    ';D',            
+                    'OK'                 
+                );
+            }
+        }, error: function(result){
+            console.log("erro");
+            navigator.vibrate([300 , 300 , 200 , 100]);
+            function failDel() {
+                location.reload();
+            }
+            
+            navigator.notification.alert(
+                'Erro ao apagar', 
+                failDel,        
+                'Erro',            
+                'OK'                 
+            );
+        }
+    });
+}

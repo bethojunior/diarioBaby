@@ -9,6 +9,7 @@
         <link href="https://fonts.googleapis.com/css?family=Montserrat|Pacifico" rel="stylesheet">
         <script src="../js/jquery.js"></script>
         <script src="../js/getDados.js"></script>
+        <script src="../js/enviarDados.js"></script>
     </head>
     <body onload="getAll()">
         <img id="preLoad">
@@ -41,6 +42,33 @@
 
             <ul id="diario">
             </ul>
+
+
+
+  <!-- Modal Structure -->
+    <div id="modalDados" class="modal">
+        <div class="modal-content">
+            <input value="" id="titleAgain">
+            <textarea id="textAgain"></textarea>
+            <a href="#modalDel" class="btn delete left">Apagar</a>
+            <button onclick="update()" class="btn salve right">Salvar</button>
+        </div>
+    </div>
+
+
+    <!-- MODAL DELETE -->
+
+    <!-- Modal Structure -->
+    <div id="modalDel" class="modal modalb bottom-sheet">
+        <div class="modal-content">
+            Deseja apagar essa nota?
+            <button class="btn delete1" onclick="dele()">Apagar</button>
+        </div>
+    </div>
+
+    
+
+  
         </div>
         <script src="../js/dadosUser.js"></script>
         <script src="../cordova.js"></script>

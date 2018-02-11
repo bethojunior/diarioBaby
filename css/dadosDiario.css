@@ -75,3 +75,39 @@ nav {
     font-size: 13pt;
     padding-top: 1%;
 }
+
+.modal {
+    width: 90%!important;
+    height: 70%!important;
+    border-radius: 8px;
+}
+
+.modal textarea {
+    resize: none;
+    height: 200px;
+    border-radius: 8px;
+}
+
+.btn{
+    text-align: center;
+    margin-top: 5%;
+}
+
+.delete {
+    background-color: red!important;
+}
+
+.salve {
+    background-color: #3490cc!important;
+}
+
+.modalb {
+    width: auto!important;
+    height: auto!important;
+    border-radius: 8px;
+}
+
+.delete1 {
+    margin-left: 30%;
+}
+
