@@ -31,6 +31,14 @@ body {
 
 nav {
     background-color: #f91d84!important;
+    position: fixed;
+    top: 0;
+}
+
+#diario {
+    overflow: auto;
+    height: 1010px;
+    margin-top: 18%;
 }
 
 .divWhite{
