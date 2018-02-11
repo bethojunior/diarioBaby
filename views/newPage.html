@@ -11,45 +11,48 @@
 
     </head>
     <body>
-        <nav>
-            <div class="nav-wrapper">
-                <!-- <a href="#" class="brand-logo">Logo</a> -->
-                <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
-            </div>
-        </nav>
-        
-        <ul id="slide-out" class="side-nav">
-            <li>
-                <div class="user-view">
-                    <div class="background">
-                        <img src="../img/backgroundIndex.png">
-                    </div>
-                      <a href="#!user"><img class="circle" src="../img/perfil.jpg"></a>
-                      <a href="#!name"><span class="white-text name">Hellen Lays</span></a>
-                      <a href="#!email"><span class="white-text email"></span></a>
+        <img id="load">
+        <div id='dshow'>
+            <nav>
+                <div class="nav-wrapper">
+                    <!-- <a href="#" class="brand-logo">Logo</a> -->
+                    <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
                 </div>
-            </li>
-                <li><a href="newPage.html"><i class="material-icons">mode_edit</i>Nova página</a></li>
-                <li><a href="getAll.html"><i class="material-icons">cloud</i>Meu diário</a></li>
-                <li><div class="divider"></div></li>
-                <li><a class="waves-effect" href="../index.html">Sair</a></li>
-        </ul>
+            </nav>
+            
+            <ul id="slide-out" class="side-nav">
+                <li>
+                    <div class="user-view">
+                        <div class="background">
+                            <img src="../img/backgroundIndex.png">
+                        </div>
+                        <a href="#!user"><img class="circle" id='img'></a>
+                        <a href="#!name"><span class="white-text name" id="nameUser"></span></a>
+                        <a href="#!email"><span class="white-text email"></span></a>
+                    </div>
+                </li>
+                    <li><a href="newPage.html"><i class="material-icons">mode_edit</i>Nova página</a></li>
+                    <li><a href="getAll.html"><i class="material-icons">cloud</i>Meu diário</a></li>
+                    <li><div class="divider"></div></li>
+                    <li><a class="waves-effect" href="../index.html">Sair</a></li>
+            </ul>
 
-        <div class="row">
-            <div class="divFormTitle">
-                <input id="titulo" type="text" placeholder="Titulo da página">
+            <div class="">
+                <div class="divFormTitle">
+                    <input id="titulo" type="text" placeholder="Titulo da página">
+                </div>
+                <div class="divFormBody">
+                    <textarea id="texto" placeholder="Meu dia .."></textarea>
+                </div>  
+                <button id="btnEnviar" class="btn">Enviar</button>
             </div>
-            <div class="divFormBody">
-                <textarea id="texto" placeholder="Meu dia .."></textarea>
-            </div>  
-            <button id="btnEnviar" class="btn">Enviar</button>
         </div>
-
 
 
 
         
         <script src="../cordova.js"></script>
+        <script src="../js/dadosUser.js"></script>
         <script src="../Materialize/js/materialize.js"></script>
         <script src="../js/enviarDados.js"></script>
 

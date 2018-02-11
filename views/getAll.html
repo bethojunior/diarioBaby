@@ -11,36 +11,38 @@
         <script src="../js/getDados.js"></script>
     </head>
     <body onload="getAll()">
-        <nav>
-            <div class="nav-wrapper">
-                <!-- <a href="#" class="brand-logo">Logo</a> -->
-                <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
-            </div>
-        </nav>
-        
-        <ul id="slide-out" class="side-nav">
-            <li>
-                <div class="user-view">
-                    <div class="background">
-                        <img src="../img/backgroundIndex.png">
-                    </div>
-                      <a href="#!user"><img class="circle" src="../img/perfil.jpg"></a>
-                      <a href="#!name"><span class="white-text name">Hellen Lays</span></a>
-                      <a href="#!email"><span class="white-text email"></span></a>
+        <img id="preLoad">
+        <div id="esconder">
+            <nav>
+                <div class="nav-wrapper">
+                    <!-- <a href="#" class="brand-logo">Logo</a> -->
+                    <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
                 </div>
-            </li>
-                <li><a href="newPage.html"><i class="material-icons">mode_edit</i>Nova página</a></li>
-                <li><a href="getAll.html"><i class="material-icons">cloud</i>Meu diário</a></li>
-                <li><div class="divider"></div></li>
-                <li><a class="waves-effect" href="../index.html">Sair</a></li>
-        </ul>
+            </nav>
+            
+            <ul id="slide-out" class="side-nav">
+                <li>
+                    <div class="user-view">
+                        <div class="background">
+                            <img src="../img/backgroundIndex.png">
+                        </div>
+                        <a href="#!user"><img class="circle" id="img"></a>
+                        <a href="#!name"><span class="white-text name" id="nameUser"></span></a>
+                        <a href="#!email"><span class="white-text email"></span></a>
+                    </div>
+                </li>
+                    <li><a href="newPage.html"><i class="material-icons">mode_edit</i>Nova página</a></li>
+                    <li><a href="getAll.html"><i class="material-icons">cloud</i>Meu diário</a></li>
+                    <li><div class="divider"></div></li>
+                    <li><a class="waves-effect" href="../index.html">Sair</a></li>
+            </ul>
 
 
 
-        <ul id="diario">
-        </ul>
-        
-        
+            <ul id="diario">
+            </ul>
+        </div>
+        <script src="../js/dadosUser.js"></script>
         <script src="../cordova.js"></script>
         <script src="../Materialize/js/materialize.js"></script>
         

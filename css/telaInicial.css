@@ -14,6 +14,12 @@ body {
 
 nav {
     background-color: #f91d84!important;
+    position: fixed;
+    top: 0;
+}
+
+.row {
+    margin: 0;
 }
 
 .divFormTitle {
@@ -21,7 +27,7 @@ nav {
     border-radius: 10px;
     background-color: white;
     margin-left: 6%;
-    margin-top: 2%;
+    margin-top: 15%;
 }
 
 #titulo {
