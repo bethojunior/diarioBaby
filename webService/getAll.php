@@ -1,8 +1,9 @@
 <?php 
 
     require "../service/conexao.php";
-
-    $sql = "SELECT * FROM diario ORDER BY id DESC";
+    $login = $_POST['login'];
+    
+    $sql = "SELECT * FROM diario WHERE login = '$login' ORDER BY id DESC";
     $dados = mysqli_query($conexao , $sql);
     $array = [];
     while($result = mysqli_fetch_object($dados)){
